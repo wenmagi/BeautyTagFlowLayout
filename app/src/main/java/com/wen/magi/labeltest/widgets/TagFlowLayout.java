@@ -5,7 +5,6 @@ package com.wen.magi.labeltest.widgets;
  * @since 11-01-2016
  */
 
-import android.app.Dialog;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -13,12 +12,10 @@ import android.util.SparseIntArray;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ListIterator;
 
 
 /**
