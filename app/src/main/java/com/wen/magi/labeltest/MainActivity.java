@@ -1,12 +1,10 @@
 package com.wen.magi.labeltest;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +19,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public static int WIDTH;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
         }
         flowLayout.requestLayout();
     }
-
 
 
     private List<String> getTextList() {
@@ -113,10 +111,11 @@ public class MainActivity extends AppCompatActivity {
         labels.add("Toolbar 是在 Android 5.0 开始推出的一个 Material Design 风格的导航控件");
         return labels;
     }
+
     /**
      * 输出屏幕宽度
      */
-    private void logScreenWidth(){
+    private void logScreenWidth() {
         WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
         if (android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB_MR2) {
